@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My App</title>
+    <!-- Provide proper viewport information so that the layout works on mobile devices. -->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+
+<body>
+    <!-- Element where PSPDFKit will be mounted. -->
+    <div id="pspdfkit" style="height: 100vh;"></div>
+
+    <script src="assets/pspdfkit.js"></script>
+
+    <script>
+        PSPDFKit.load({
+            container: '#pspdfkit',
+            document: './pages/Resume.pdf',
+        })
+            .then(function (instance) {
+                console.log('PSPDFKit loaded', instance);
+            })
+            .catch(function (error) {
+                console.error(error.message);
+            });
+    </script>
+</body>
+
+</html>
