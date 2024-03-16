@@ -81,7 +81,7 @@ const Register = () => {
               />
               
             <Form.Control.Feedback type="invalid">
-              Please choose a Email.
+              Please choose an Email.
             </Form.Control.Feedback>
           </InputGroup>
           </Form.Group>

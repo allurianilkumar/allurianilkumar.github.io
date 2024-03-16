@@ -1,4 +1,4 @@
-import React, {  useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Nav1';
 import routes from './routes';
@@ -8,15 +8,15 @@ import Footer from './Footer';
 const App = () => {
    return (
      <Router>
-       <Navbar />
-       <div className="container mt-4">
-         <Routes>
-          {routes.map((route, index) => (
-             <Route key={index} path={route.path} element={route.component} />
-           ))}
-         </Routes>
-       </div>
-       <Footer />
+      <div className="container mt-4">
+        <Navbar />
+          <Routes>
+            {routes.map((route, index) => (
+              <Route key={index} path={route.path} element={route.component} />
+            ))}
+          </Routes>
+        <Footer />
+      </div>
      </Router>
    );
  };

@@ -7,19 +7,39 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
 }
+html {
+  overflow-y: auto;
+}
 
+html::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+html::-webkit-scrollbar:vertical {
+  width: 0px;
+}
+
+html::-webkit-scrollbar:horizontal {
+  height: 0px;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  border: 0px solid white;
+  /* should match background, can't be transparent */
+  background-color: red;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-footer {
-  position: absolute;
-  /* position: fixed; */
+.footer {
+  position: relative;
   right: 0;
   bottom: 0;
+  width: 100%;
   left: 0;
+  margin-top: 30px;
   padding: 1rem;
-
-  /* text-align: center; */
 }
