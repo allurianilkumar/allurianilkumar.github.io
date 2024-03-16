@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import 'font-awesome/css/font-awesome.min.css';
+
 import Navbar from './Nav1';
 import routes from './routes';
 import 'bootstrap/dist/css/bootstrap.min.css';
