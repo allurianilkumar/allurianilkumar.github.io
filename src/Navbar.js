@@ -14,7 +14,9 @@ function NavBar() {
       {['md'].map((expand) => (
         <Navbar bg="dark" data-bs-theme="dark" sticky="top" key={expand} expand={expand} className="bg-body-tertiary">
           <Container fluid>
-            <Navbar.Brand href="#">Alluri Anil kumar</Navbar.Brand>
+            <Navbar.Brand>
+              <Nav.Link as={NavLink} to="/">Alluri Anil kumar</Nav.Link>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
