@@ -43,7 +43,7 @@ const Register = () => {
   return(
     <>
     
-      <h1> Registration Form:</h1>
+      <h3> Registration Form:</h3>
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
       <Row className="mb-3">
         <Form.Group as={Col} md="4" controlId="validationCustom01">

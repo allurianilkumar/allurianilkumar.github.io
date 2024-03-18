@@ -38,7 +38,7 @@ const Register = () => {
 
   return(
     <>
-      <h1> Login Form:</h1>
+      <h3> Login Form:</h3>
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
       
         <Row className="mb-3">
