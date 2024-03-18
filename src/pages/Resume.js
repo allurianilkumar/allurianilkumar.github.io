@@ -6,8 +6,10 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 import PDFViewer from './PDFViewer';
+import useDocumentTitle from '../hooks/useDocumentTitle';
+
 const Resume = () => { 
-     
+     const [document_title, setDocumentTitle] = useDocumentTitle("ROR:Resume");
     return (
         <>
             <Container>

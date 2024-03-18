@@ -1,18 +1,21 @@
 // Contact.js
-import React from 'react';
-import { useState } from 'react';
+import { React, useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
+import useDocumentTitle from '../hooks/useDocumentTitle';
 
 const Register = () => {
+  const [document_title, setDoucmentTitle] = useDocumentTitle("ROR:Registration");
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     email: '',
+    username: '',
     password: '',
+    confimPassword: '',
     subscribe: false,
   });
   const [validated, setValidated] = useState(false);
@@ -30,16 +33,17 @@ const Register = () => {
   };
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-
     setFormData((prevData) => ({
       ...prevData,
       [name]: type === 'checkbox' ? checked : value,
     }));
   };
-
+ 
+  
   return(
     <>
-      <h1> Register:</h1>
+    
+      <h1> Registration Form:</h1>
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
       <Row className="mb-3">
         <Form.Group as={Col} md="4" controlId="validationCustom01">
@@ -49,22 +53,24 @@ const Register = () => {
               type="text"
               name="firstName"
               onChange={handleChange}
-              placeholder="First name"
+              placeholder="Enter first name"
               defaultValue={ formData.firstName || "" }
           />
-          <Form.Control.Feedback type="invalid">First Name Please</Form.Control.Feedback>
+          <Form.Control.Feedback type="invalid">Please select first name</Form.Control.Feedback>
           </Form.Group>
           <Form.Group as={Col} md="4" controlId="validationCustom02">
-          <Form.Label>Last name</Form.Label>
+            <Form.Label>Last name</Form.Label>
+             <InputGroup hasValidation>
           <Form.Control
             required
               type="text"
-              name="lastName"
+                name="lastName"
               onChange={handleChange}
-            placeholder="Last name"
-            defaultValue={ formData.lastName || ""}
+                placeholder="Enter last name"
+              value={ formData.lastName || ""}
           />
-          <Form.Control.Feedback type="invalid">Last Name Please</Form.Control.Feedback>
+              <Form.Control.Feedback type="invalid">Please select last name</Form.Control.Feedback>
+              </InputGroup>
           </Form.Group>
           </Row>
         <Row className="mb-3">
@@ -73,54 +79,98 @@ const Register = () => {
           <InputGroup hasValidation>
             <Form.Control
               type="text"
-                placeholder="Email"
-                name="email"
-                onChange={handleChange}
+              placeholder="Enter an email"
+              name="email"
+              onChange={handleChange}
               aria-describedby="inputGroupPrepend"
+              isInvalid= { validated && !/^\S+@\S+\.\S+$/.test(formData.email) }
               required
-              />
+            />
               
             <Form.Control.Feedback type="invalid">
               Please choose an Email.
             </Form.Control.Feedback>
           </InputGroup>
           </Form.Group>
+            <Form.Group as={Col} md="4" controlId="username">
+                <Form.Label>Username</Form.Label>
+                <Form.Control
+              type="text"
+              placeholder="Enter username"
+                    name="username"
+                    value={formData.username}
+                    onChange={handleChange}
+                    pattern="^[a-zA-Z0-9]+$"
+                    required
+                    isInvalid={ validated && !/^[a-zA-Z0-9]+$/.test(formData.username) }
+                />
+                <Form.Control.Feedback type="invalid">
+                    Please enter a valid username (alphanumeric
+                    characters only).
+                </Form.Control.Feedback>
+            </Form.Group>
+          
+        </Row>
+                            
+        <Row className="mb-3">
           <Form.Group as={Col} md="4" controlId="validationCustomPassword">
           <Form.Label>Password</Form.Label>
           <InputGroup hasValidation>
             <Form.Control
               type="password"
-                placeholder="Password"
+                placeholder="Enter password"
                 name="password"
+                minLength={6}
                 onChange={handleChange}
+                isInvalid={validated && formData.password.length < 6}
               aria-describedby="inputGroupPrepend"
               required
               />
               <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-            <Form.Control.Feedback type="invalid">
-              Please choose a Password.
-            </Form.Control.Feedback>
+              <Form.Control.Feedback type="invalid">
+                Password must be at least 6 characters long.
+              </Form.Control.Feedback>
           </InputGroup>
           </Form.Group>
+        <Form.Group  as={Col} md="4" controlId="confirmPassword">
+            <Form.Label>Confirm Password</Form.Label>
+            <Form.Control
+              type="password"
+              placeholder="Enter confirm password"
+                name="confimPassword"
+                value={formData.confimPassword}
+                onChange={handleChange}
+                minLength={6}
+                required
+                pattern={formData.password}
+                isInvalid={
+                    validated &&
+                    formData.confimPassword !== formData.password
+                }
+            />
+            <Form.Control.Feedback type="invalid">
+                Passwords do not match.
+            </Form.Control.Feedback>
+        </Form.Group>      
         </Row>
         <Row className="mb-3">
           <Form.Group as={Col} md="4" controlId="validationCustomSubscribe">
           <Form.Label>Subscribe:</Form.Label>
           <InputGroup hasValidation>
             <Form.Check 
+                required
                 type="switch"
-                
+                defaultChecked={ formData.subscribe || false }
                 id="custom-switch"
                 name="subscribe"
-                checked={ formData.subscribe || false }
                 onChange={handleChange}
-                label="Subscribe"
+                label="I accept the Terms and Conditions"
+                validated="true"
               />
-            <Form.Control.Feedback type="invalid">Please check a Subscribe.</Form.Control.Feedback>
             </InputGroup>
-          </Form.Group>       
+          </Form.Group>
       </Row>
-      <Button type="submit">Submit form</Button>
+      <Button type="submit">Register</Button>
       </Form>
     </>
   );

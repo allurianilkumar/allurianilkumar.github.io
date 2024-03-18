@@ -1,6 +1,11 @@
 // Contact.js
 import React from 'react';
 
-const Java = () => <h1> Java:</h1>;
+import useDocumentTitle from '../../hooks/useDocumentTitle';
+
+const Java = () => {
+    const [document_title, setDocumentTitle] = useDocumentTitle("ROR:Java");
+    return (<h1> Java:</h1>);
+}
 
 export default Java;

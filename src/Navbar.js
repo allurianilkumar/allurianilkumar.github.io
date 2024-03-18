@@ -8,7 +8,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { NavLink } from 'react-router-dom';
 
-function Nav1() {
+function NavBar() {
   return (
     <>
       {['md'].map((expand) => (
@@ -71,4 +71,4 @@ function Nav1() {
   );
 }
 
-export default Nav1;
+export default NavBar;
