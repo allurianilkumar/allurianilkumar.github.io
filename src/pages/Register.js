@@ -6,6 +6,8 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import useDocumentTitle from '../hooks/useDocumentTitle';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
   const [document_title, setDoucmentTitle] = useDocumentTitle("ROR:Registration");
@@ -25,8 +27,10 @@ const Register = () => {
     const form = event.currentTarget; 
     if ((formData.subscribe === false) || (form.checkValidity() === false)) {
       console.log('Form validation failed2', formData);
+      toast.error("Please check validation errors", { autoClose: 800 } );
     } else {
-      alert(JSON.stringify(formData));
+      // alert(JSON.stringify(formData));
+      toast.success("Successfully Registered", { autoClose: 800 } );
       console.log('Form submitted:', formData);
     }
     setValidated(true);
@@ -172,6 +176,7 @@ const Register = () => {
       </Row>
       <Button type="submit">Register</Button>
       </Form>
+      <ToastContainer position="top-right"/>
     </>
   );
 }
