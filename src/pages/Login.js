@@ -9,8 +9,11 @@ import Row from 'react-bootstrap/Row';
 import useDocumentTitle from '../hooks/useDocumentTitle';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-const Register = () => {
+import { useNavigate  } from 'react-router-dom'; 
+const Login = ({ setIsAuthenticated }) => {
+  const navigate = useNavigate();
+  const user = sessionStorage.getItem("user") ? sessionStorage.getItem("user") : null ;
+  const isLogined = sessionStorage.getItem("isLogined") ? sessionStorage.getItem("isLogined") : false;
   const [document_title, setDocumentTitle] = useDocumentTitle("ROR:Login");
   const [formData, setFormData] = useState({
       email: '',
@@ -23,14 +26,19 @@ const Register = () => {
     event.preventDefault();
     const form = event.currentTarget; 
     if ((formData.login === false) || (form.checkValidity() === false)) {
-      console.log('Form validation:', formData);
-      toast.error("Please check validation errors", { autoClose: 800 } );
+      if (user.email === formData.email && user.password === formData.password) {
+        console.log('Form validation:', formData);
+        toast.error("Please check validation errors", { autoClose: 800 } );  
+      }
     } else {
       alert(JSON.stringify(formData));
       toast.success("Successfully logined", { autoClose: 800 } );
       console.log('Form submitted:', formData);
+      setIsAuthenticated(true);
+      setValidated(true);
+      navigate('/home');
     }
-    setValidated(true);
+setValidated(true);
   };
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -42,6 +50,7 @@ const Register = () => {
 
   return(
     <>
+      
       <h3> Login Form:</h3>
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
       
@@ -110,4 +119,4 @@ const Register = () => {
   );
 }
 
-export default Register;
+export default Login;

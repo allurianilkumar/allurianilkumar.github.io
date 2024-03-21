@@ -1,15 +1,23 @@
 // Contact.js
 import { React, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom'; 
+
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import useDocumentTitle from '../hooks/useDocumentTitle';
+
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Register = () => {
+import axios from 'axios';
+
+
+const Register = ({ setIsAuthenticated }) => {
+  const navigate = useNavigate();
+  const user = sessionStorage.getItem("user") ? sessionStorage.getItem("user") : null;
   const [document_title, setDoucmentTitle] = useDocumentTitle("ROR:Registration");
   const [formData, setFormData] = useState({
     firstName: '',
@@ -22,18 +30,29 @@ const Register = () => {
   });
   const [validated, setValidated] = useState(false);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const form = event.currentTarget; 
     if ((formData.subscribe === false) || (form.checkValidity() === false)) {
       console.log('Form validation failed2', formData);
       toast.error("Please check validation errors", { autoClose: 800 } );
     } else {
-      // alert(JSON.stringify(formData));
-      toast.success("Successfully Registered", { autoClose: 800 } );
-      console.log('Form submitted:', formData);
+      console.log(JSON.stringify(formData));
+      try {
+        const url = 'http://localhost:8000/users';
+	      const data = JSON.stringify(formData);
+	      //const config = { 'content-type': 'application/json' };
+        // const response = await axios.post(url, data, config);
+        // console.log("Axios Response: ", response);
+        sessionStorage.setItem('user', data);
+        toast.success("Successfully Registered", { autoClose: 800 });
+        console.log('Form submitted:', formData);
+        setValidated(true);
+        navigate('/login');
+      } catch (error) {
+        console.log("Axios Error: ",error);
+      }
     }
-    setValidated(true);
   };
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
