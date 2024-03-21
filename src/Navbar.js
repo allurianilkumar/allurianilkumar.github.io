@@ -48,6 +48,8 @@ function NavBar({ isAuthenticated }) {
                     <NavDropdown.Divider />
                     <NavDropdown.Item as={NavLink} to="/react">React JS</NavDropdown.Item>
                     <NavDropdown.Item as={NavLink} to="/javascript">JavaScript</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item as={NavLink} to="/mysql">MySQL</NavDropdown.Item>
                   </NavDropdown>
                   <Nav.Link as={NavLink} to="/resume"><i className="d-block fa fa-file-pdf-o fa-2x" aria-hidden="true"></i>Resume</Nav.Link>
                   <Nav.Link as={NavLink} to="/contact"><i className="d-block fa fa-address-card-o fa-2x" aria-hidden="true"></i>Contact</Nav.Link>

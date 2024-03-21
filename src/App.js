@@ -17,6 +17,14 @@ import routes from './routes';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Footer';
 
+import Ruby from './programmings/ruby/Ruby';
+import Java from './programmings/java/Java';
+import Python from './programmings/python/Python';
+import MyReact from './programmings/react/MyReact';
+import JavaScript from './programmings/javascript/JavaScript';
+import Rails from './programmings/rails/Rails';
+import MySQL from './programmings/mysql/mysql';
+
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   useEffect(() => {
@@ -30,7 +38,17 @@ const App = () => {
         <NavBar isAuthenticated={isAuthenticated} />
         <Routes>
           <Route path="/" index element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/resume" element={<Contact />} />
+
+          <Route path="/ruby" element={<Ruby />} />
+          <Route path="/rails" element={<Rails />} />
+          <Route path="/react" element={<MyReact />} />
+          <Route path="/JavaScript" element={<JavaScript />} />
+          <Route path="/mysql" element={<MySQL />} />
+          <Route path="/python" element={<Python />} />
+          <Route path="/java" element={<Java />} />
           {isAuthenticated ? 
             <>
               <Route path="/logout" element={<Logout setIsAuthenticated={setIsAuthenticated} />} />
@@ -41,6 +59,7 @@ const App = () => {
               <Route key="login" path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
             </>
           }
+          <Route path="*" element={<Home />} />
         </Routes>
         <Footer />
       </div>
