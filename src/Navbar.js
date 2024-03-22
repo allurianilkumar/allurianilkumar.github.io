@@ -38,7 +38,7 @@ function NavBar({ isAuthenticated }) {
                   <Nav.Link title="Home" as={NavLink} to="/"><i className="d-block fa fa-home fa-2x" aria-hidden="true"></i>Home</Nav.Link>
                   <Nav.Link as={NavLink} to="/about"><i className="d-block fa fa-pencil fa-2x" aria-hidden="true"></i>About</Nav.Link>
                   <NavDropdown
-                    title={<><i className="d-block fa fa-code faa-code fa-2x" aria-hidden="true"></i>Programming</>}
+                    title={<><i className="d-block fa fa-code faa-code fa-2x" aria-hidden="true"></i>Technologies</>}
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                     className="mydropdownmenu"
                     onMouseEnter={() => setShow(true) }

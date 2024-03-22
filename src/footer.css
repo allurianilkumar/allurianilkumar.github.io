@@ -9,13 +9,15 @@ footer a {
 }
 
 footer a:hover {
-    color: rgb(108, 173, 70);
+    color: #fff;
+        font-weight: bolder;
 }
 
 footer h3 {
-    color: #0894d2;
+    color: #fff;
     letter-spacing: 1px;
     margin: 30px 0 20px;
+    font-weight: bold;
 }
 
 footer .three-column {
@@ -48,7 +50,7 @@ footer .socila-list li:hover {
 
 footer .img-thumbnail {
     background: rgba(0, 0, 0, 0.2);
-    border: 1px solid #444;
+    border: 1px solid #586451;
     margin-bottom: 5px;
 }
 
@@ -60,6 +62,7 @@ footer .copyright {
 }
 
 footer .copyright span {
-    color: #0894d1;
+    color: #fff;
+        font-weight: bold;
 }
 

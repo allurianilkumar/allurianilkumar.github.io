@@ -1,5 +1,6 @@
 import React from 'react';
 import './footer.css';
+import { Link } from 'react-router-dom';
 const Footer = () => {
     let currentYear = new Date().getFullYear();
     
@@ -10,18 +11,45 @@ const Footer = () => {
                     <div className="row">
       
                         <div className="col-lg-4 col-md-6">
-                            <h3>My Programming</h3>
+                            <h3>My Technologies</h3>
+                            <hr/>
                             <ul className="list-unstyled three-column">
-                                <li>Home</li>
-                                <li>About</li>
-                                <li>Contact</li>
-                                <li>Ruby</li>
-                                <li>Rails</li>
-                                <li>React Js</li>
-                                <li>JavaScript</li>
-                                <li>MySQL</li>
-                                <li>HTML</li>
-                                <li>CSS</li>
+                                <li>
+                                    <Link to={`/ruby`}>{'Ruby'}</Link>
+                                </li>
+                                <li>
+                                    <Link to={`/rails`}>{'Rails'}</Link>
+                                </li>
+                                <li>
+                                    <Link to={`/reactjs`}>{'ReactJS'}</Link>
+                                </li>
+                                <li>
+                                    <Link to={`/javascript`}>{'JavaScript'}</Link>
+                                </li>
+                                <li>
+                                    <Link to={`/boostrap`}>{'Boostrap'}</Link>
+                                </li>
+                                <li>
+                                    <Link to={`/postgresql`}>{'PostgreSQL'}</Link>
+                                </li>
+                                <li>
+                                    <Link to={`/mysql`}>{'MySQL'}</Link>
+                                </li>
+                                <li>
+                                    <Link to={`/html`}>{'HTML'}</Link>
+                                </li>
+                                <li>
+                                    <Link to={`/css`}>{'CSS'}</Link>
+                                </li>
+                                <li>
+                                    <Link to={`/java`}>{'Java'}</Link>
+                                </li>
+                                <li>
+                                    <Link to={`/python`}>{'Python'}</Link>
+                                </li>
+                                <li>
+                                    <Link to={`/github`}>{'github'}</Link>
+                                </li>
                             </ul>
                             <ul className="list-unstyled three-column">
                                 <li className="list-group-item bg-transparent border-0 p-0 mb-2">
@@ -30,9 +58,8 @@ const Footer = () => {
                                 <li className="list-group-item bg-transparent border-0 p-0 mb-2">
                                     <a href="https://github.com/allurianilkumar"><i className="fa fa-github mr-1"></i> Github</a>
                                 </li>
-
                                 <li className="list-group-item bg-transparent border-0 p-0 mb-2">
-                                    <a href="https://www.youtube.com/channel/momcomputers" ><i className="fa fa-youtube mr-1"></i> YouTube</a>
+                                    <a href="https://www.youtube.com/@momcomputers" ><i className="fa fa-youtube mr-1"></i> YouTube</a>
                                 </li>
                             </ul>
                             <ul className="list-unstyled socila-list">
@@ -41,7 +68,6 @@ const Footer = () => {
                                 <li><img src="http://placehold.it/48x48" alt="" /></li>
                                 <li><img src="http://placehold.it/48x48" alt="" /></li>
                                 <li><img src="http://placehold.it/48x48" alt="" /></li>
-                                <li><img src="http://placehold.it/48x48" alt="" /></li>
                             </ul>
                             <ul className="list-unstyled socila-list">
                                 <li><img src="http://placehold.it/48x48" alt="" /></li>
@@ -49,18 +75,8 @@ const Footer = () => {
                                 <li><img src="http://placehold.it/48x48" alt="" /></li>
                                 <li><img src="http://placehold.it/48x48" alt="" /></li>
                                 <li><img src="http://placehold.it/48x48" alt="" /></li>
-                                <li><img src="http://placehold.it/48x48" alt="" /></li>
                             </ul>
                              <ul className="list-unstyled socila-list">
-                                <li><img src="http://placehold.it/48x48" alt="" /></li>
-                                <li><img src="http://placehold.it/48x48" alt="" /></li>
-                                <li><img src="http://placehold.it/48x48" alt="" /></li>
-                                <li><img src="http://placehold.it/48x48" alt="" /></li>
-                                <li><img src="http://placehold.it/48x48" alt="" /></li>
-                                <li><img src="http://placehold.it/48x48" alt="" /></li>
-                            </ul>
-                             <ul className="list-unstyled socila-list">
-                                <li><img src="http://placehold.it/48x48" alt="" /></li>
                                 <li><img src="http://placehold.it/48x48" alt="" /></li>
                                 <li><img src="http://placehold.it/48x48" alt="" /></li>
                                 <li><img src="http://placehold.it/48x48" alt="" /></li>
@@ -70,11 +86,12 @@ const Footer = () => {
                         </div>
       
                         <div className="col-lg-4 col-md-6">
-                            <h3>Latest Assignments</h3>
+                            <h3>My Latest Articles</h3>
+                            <hr/>
                             <div className="media">
-                                <a href="a1" className="pull-left">
+                                <Link to={`/javascript`} className="pull-left">
                                     <img src="http://placehold.it/64x64" alt="" className="media-object" />
-                                </a>
+                                </Link>
                                 <div className="media-body">
                                     <h4 className="media-heading">Programming</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -82,46 +99,58 @@ const Footer = () => {
                             </div>
         
                             <div className="media">
-                                <a href="a2" className="pull-left">
+                                <Link to={`/javascript`} className="pull-left">
                                     <img src="http://placehold.it/64x64" alt="" className="media-object" />
-                                </a>
+                                </Link>
                                 <div className="media-body">
-                                    <h4 className="media-heading">Coding</h4>
+                                    <h4 className="media-heading">Programming</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                 </div>
                             </div>
         
                             <div className="media">
-                                <a href="a3" className="pull-left">
+                                <Link to={`/javascript`} className="pull-left">
                                     <img src="http://placehold.it/64x64" alt="" className="media-object" />
-                                </a>
+                                </Link>
                                 <div className="media-body">
-                                    <h4 className="media-heading">Web Sesign</h4>
+                                    <h4 className="media-heading">Programming</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                 </div>
                             </div>
                              <div className="media">
-                                <a href="a3" className="pull-left">
+                                <Link to={`/javascript`} className="pull-left">
                                     <img src="http://placehold.it/64x64" alt="" className="media-object" />
-                                </a>
+                                </Link>
                                 <div className="media-body">
-                                    <h4 className="media-heading">Web Sesign</h4>
+                                    <h4 className="media-heading">Programming</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                 </div>
                             </div>
-        
                         </div>
       
-                        <div className="col-lg-4">
-                            <h3>Work Experience</h3>
-                            <img className="img-thumbnail" src="http://placehold.it/140x90" alt="" />
-                            <img className="img-thumbnail" src="http://placehold.it/140x90" alt="" />
-                            <img className="img-thumbnail" src="http://placehold.it/140x90" alt="" />
-                            <img className="img-thumbnail" src="http://placehold.it/140x90" alt="" />
-                            <img className="img-thumbnail" src="http://placehold.it/140x90" alt="" />
-                            <img className="img-thumbnail" src="http://placehold.it/140x90" alt="" />
-                            <img className="img-thumbnail" src="http://placehold.it/140x90" alt="" />
-                            <img className="img-thumbnail" src="http://placehold.it/140x90" alt="" />
+                        <div className="col-lg-4 workexperience">
+                            <h3>My Work Experience</h3>
+                            <hr/>
+                            <Link to={`/javascript`}>
+                                <img className="img-thumbnail" src="http://placehold.it/140x90" alt="" />
+                            </Link>
+                            <Link to={`/javascript`}>
+                                <img className="img-thumbnail" src="http://placehold.it/140x90" alt="" />
+                            </Link>
+                            <Link to={`/javascript`}>
+                                <img className="img-thumbnail" src="http://placehold.it/140x90" alt="" />
+                            </Link>
+                            <Link to={`/javascript`}>
+                                <img className="img-thumbnail" src="http://placehold.it/140x90" alt="" />
+                            </Link>
+                            <hr />
+                            <h3>My Personal Experience</h3>
+                            <Link to={`/javascript`}>
+                                <img className="img-thumbnail" src="http://placehold.it/140x90" alt="" />
+                            </Link>
+                            <Link to={`/javascript`}>
+                                <img className="img-thumbnail" src="http://placehold.it/140x90" alt="" />
+                            </Link>
                         </div>
                     </div>
                 </div>
