@@ -1,3 +1,15 @@
 .mydropdownmenu>.dropdown-menu {
   width: 300%;
 }
+.mymenu>.dropdown-item.active {
+  background: #099001;
+  color: blue;
+  font-size: large;
+  font-weight: bold;
+}
+
+.mymenu>.dropdown-item:hover {
+  background: #afce03;
+  color: red;
+  font-weight: bolder;
+}

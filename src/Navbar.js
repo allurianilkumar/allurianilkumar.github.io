@@ -46,48 +46,47 @@ function NavBar({ isAuthenticated }) {
                     show={ show }
                   >
                   <Row>
-                  <Col xs="12" md="6" className="text-left">
+                  <Col xs="12" md="6" className="mymenu text-left">
                   <NavDropdown.Divider />
                   <h3>Back-End</h3>
                   <NavDropdown.Divider />
-                    <NavDropdown.Item as={NavLink} to="/ruby">Ruby</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/rails">Rails</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/python">Python</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/java">Java</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/php">PHP</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/c">C</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/c#">C#</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/ruby">Ruby</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/rails">Rails</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/python">Python</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/java">Java</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/php">PHP</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/c">C</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/c#">C#</NavDropdown.Item>
                     <NavDropdown.Divider />
                     <h3>Databases</h3>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item as={NavLink} to="/mysql">MySQL</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/postgresql">PostgreSQL</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/oracle">Oracle</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/MongoDB">MongoDB</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/mysql">MySQL</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/postgresql">PostgreSQL</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/oracle">Oracle</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/MongoDB">MongoDB</NavDropdown.Item>
                     </Col>
-                    <Col xs="12" md="6" className="text-left">
+                    <Col xs="12" md="6" className="mymenu text-left">
                     <NavDropdown.Divider />
                     <h3>Front-End</h3>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item as={NavLink} to="/react">React JS</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/javascript">JavaScript</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/jquery">JQuery</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/bootstrap">Bootstrap</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/axios">Axios</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/nodejs">NodeJS</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/html">HTML</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/css">CSS</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/images_fonts">Images/Fonts</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/json_xml">JSON/XML</NavDropdown.Item>
-                    <Dropdown.Divider/>                    
-                    <NavDropdown.Divider />
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/react">React JS</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/javascript">JavaScript</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/jquery">JQuery</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/bootstrap">Bootstrap</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/axios">Axios</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/nodejs">NodeJS</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/html">HTML</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/css">CSS</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/images_fonts">Images/Fonts</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/json_xml">JSON/XML</NavDropdown.Item>
+                    <Dropdown.Divider/>
                     <h3>Testing Tools</h3>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item as={NavLink} to="/manual_testing">Manual</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/selenium_automation">Selenium</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/rspec">RSpec</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/maven">Maven</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/testNG">TestNG</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/manual_testing">Manual</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/selenium_automation">Selenium</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/rspec">RSpec</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/maven">Maven</NavDropdown.Item>
+                    <NavDropdown.Item onClick={ () => setShow(false) } as={NavLink} to="/testNG">TestNG</NavDropdown.Item>
                     </Col>
                     </Row>
                   </NavDropdown>
