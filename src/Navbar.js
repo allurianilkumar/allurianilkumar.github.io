@@ -1,14 +1,14 @@
-import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
 
+import {
+  Container, Row, Col,
+  Button, Form, Nav, Navbar, Dropdown, NavDropdown,Offcanvas
+} from 'react-bootstrap';
+
+import { NavLink } from 'react-router-dom';
+import './styles/submenu.css';
 function NavBar({ isAuthenticated }) {
+  const [show,setShow] = useState(false);
   // const user = sessionStorage.getItem("user") ? sessionStorage.getItem("user") : null;
   // const isLogined = sessionStorage.getItem("isLogined") ? sessionStorage.getItem("isLogined") : false;
   return (
@@ -21,6 +21,8 @@ function NavBar({ isAuthenticated }) {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
+              bg="dark"
+              data-bs-theme="dark"
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
@@ -33,23 +35,61 @@ function NavBar({ isAuthenticated }) {
 
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link as={NavLink} to="/"><i className="d-block fa fa-home fa-2x" aria-hidden="true"></i>Home</Nav.Link>
+                  <Nav.Link title="Home" as={NavLink} to="/"><i className="d-block fa fa-home fa-2x" aria-hidden="true"></i>Home</Nav.Link>
                   <Nav.Link as={NavLink} to="/about"><i className="d-block fa fa-pencil fa-2x" aria-hidden="true"></i>About</Nav.Link>
-                  
                   <NavDropdown
-                    title={<><i className="d-block fa fa-code faa-code fa-2x" aria-hidden="true"></i>Programming</> }
+                    title={<><i className="d-block fa fa-code faa-code fa-2x" aria-hidden="true"></i>Programming</>}
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
-                    className="text-center"
+                    className="mydropdownmenu"
+                    onMouseEnter={() => setShow(true) }
+                    onMouseLeave={ () => setShow(false) }
+                    show={ show }
                   >
+                  <Row>
+                  <Col xs="12" md="6" className="text-left">
+                  <NavDropdown.Divider />
+                  <h3>Back-End</h3>
+                  <NavDropdown.Divider />
                     <NavDropdown.Item as={NavLink} to="/ruby">Ruby</NavDropdown.Item>
                     <NavDropdown.Item as={NavLink} to="/rails">Rails</NavDropdown.Item>
                     <NavDropdown.Item as={NavLink} to="/python">Python</NavDropdown.Item>
                     <NavDropdown.Item as={NavLink} to="/java">Java</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/php">PHP</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/c">C</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/c#">C#</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <h3>Databases</h3>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item as={NavLink} to="/mysql">MySQL</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/postgresql">PostgreSQL</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/oracle">Oracle</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/MongoDB">MongoDB</NavDropdown.Item>
+                    </Col>
+                    <Col xs="12" md="6" className="text-left">
+                    <NavDropdown.Divider />
+                    <h3>Front-End</h3>
                     <NavDropdown.Divider />
                     <NavDropdown.Item as={NavLink} to="/react">React JS</NavDropdown.Item>
                     <NavDropdown.Item as={NavLink} to="/javascript">JavaScript</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/jquery">JQuery</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/bootstrap">Bootstrap</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/axios">Axios</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/nodejs">NodeJS</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/html">HTML</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/css">CSS</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/images_fonts">Images/Fonts</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/json_xml">JSON/XML</NavDropdown.Item>
+                    <Dropdown.Divider/>                    
                     <NavDropdown.Divider />
-                    <NavDropdown.Item as={NavLink} to="/mysql">MySQL</NavDropdown.Item>
+                    <h3>Testing Tools</h3>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item as={NavLink} to="/manual_testing">Manual</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/selenium_automation">Selenium</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/rspec">RSpec</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/maven">Maven</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to="/testNG">TestNG</NavDropdown.Item>
+                    </Col>
+                    </Row>
                   </NavDropdown>
                   <Nav.Link as={NavLink} to="/resume"><i className="d-block fa fa-file-pdf-o fa-2x" aria-hidden="true"></i>Resume</Nav.Link>
                   <Nav.Link as={NavLink} to="/contact"><i className="d-block fa fa-address-card-o fa-2x" aria-hidden="true"></i>Contact</Nav.Link>

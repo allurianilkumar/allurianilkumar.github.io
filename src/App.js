@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'font-awesome-animation/css/font-awesome-animation.min.css'
 
@@ -10,11 +12,7 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import Logout from './pages/Logout';
 import Resume from './pages/Resume';
-import NoPage from './pages/NoPage';
-
 import NavBar from './Navbar';
-import routes from './routes';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Footer';
 
 import Ruby from './programmings/ruby/Ruby';
@@ -30,7 +28,6 @@ const App = () => {
   useEffect(() => {
     setIsAuthenticated(sessionStorage.getItem('isLogined'));
   }, []);
-
 
   return (
     <Router>
