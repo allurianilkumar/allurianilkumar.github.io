@@ -53,9 +53,6 @@ const Footer = () => {
                             </ul>
                             <ul className="list-unstyled three-column">
                                 <li className="list-group-item bg-transparent border-0 p-0 mb-2">
-                                    <a href="https://www.linkedin.com/"><i className="fa fa-linkedin mr-1"></i> LinkedIn</a>
-                                </li>
-                                <li className="list-group-item bg-transparent border-0 p-0 mb-2">
                                     <a href="https://github.com/allurianilkumar"><i className="fa fa-github mr-1"></i> Github</a>
                                 </li>
                                 <li className="list-group-item bg-transparent border-0 p-0 mb-2">
