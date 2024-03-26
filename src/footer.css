@@ -37,10 +37,10 @@ footer .socila-list {
 
 footer .socila-list li {
     float: left;
+    padding-left: 10px;
     margin-right: 3px;
     opacity: 0.7;
     overflow: hidden;
-    border-radius: 50%;
     transition: all 0.3s ease-in-out;
 }
 
