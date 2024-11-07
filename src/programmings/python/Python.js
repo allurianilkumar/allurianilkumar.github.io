@@ -30,8 +30,8 @@ const Python = () => {
             <Button title="Click to download now" variant="warning">
               <a
                 className="button"
-                href="Python_Lab_3.pdf"
-                download="Python_Lab_3.pdf"
+                href="Python_Lab_5.pdf"
+                download="Python_Lab_5.pdf"
               >
                 Python Lab
                 <i className="fa fa-download" />
