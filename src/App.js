@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
 import "font-awesome-animation/css/font-awesome-animation.min.css";
+import { Helmet } from "react-helmet";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -76,6 +77,12 @@ const App = () => {
   return (
     <Router>
       <div className="container mt-0">
+        <Helmet>
+          <meta
+            name="google-adsense-account"
+            content="ca-pub-2929832687914465"
+          />
+        </Helmet>
         <marquee style={marqueeStyle}>
           {" "}
           Hello, My website in progress. I am Anil, Full Stack Ruby On Rails
