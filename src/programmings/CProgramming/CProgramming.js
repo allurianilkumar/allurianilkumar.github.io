@@ -29,7 +29,20 @@ const CProgramming = () => {
                 href="C_Programming_Syllabus.pdf"
                 download="C_Programming_Syllabus.pdf"
               >
-                C Programming Syllabus <i className="fa fa-download" />
+                CP Syllabus <i className="fa fa-download" />
+              </a>
+            </Button>
+          </div>
+        </Col>
+        <Col>
+          <div className="">
+            <Button title="Click to download CP Lab Syllabus" variant="warning">
+              <a
+                className="button"
+                href="CP_LAB_1-B-Tech-Syllabus.pdf"
+                download="CP_LAB_1-B-Tech-Syllabus.pdf"
+              >
+                CP Lab Syllabus <i className="fa fa-download" />
               </a>
             </Button>
           </div>
@@ -47,7 +60,8 @@ const CProgramming = () => {
           <div className="">
             <Button title="Click to downlod UNIT-I" variant="warning">
               <a className="button" href="C_Unit_I.pdf" download="C_Unit_I.pdf">
-                C UNIT-I Note Book <i className="fa fa-download" />
+                CP UNIT-I
+                <i className="fa fa-download" />
               </a>
             </Button>
           </div>
@@ -56,7 +70,8 @@ const CProgramming = () => {
           <div className="">
             <Button title="Click to downlod UNIT-II" variant="warning">
               <a className="button" href="UNIT-II.pdf" download="UNIT-II.pdf">
-                C UNIT-II Note Book <i className="fa fa-download" />
+                CP UNIT-II
+                <i className="fa fa-download" />
               </a>
             </Button>
           </div>
@@ -72,7 +87,7 @@ const CProgramming = () => {
                 href="UNIT-III,IV and V.pdf"
                 download="UNIT-III,IV and V.pdf"
               >
-                C UNIT-III, IV and V Note Book <i className="fa fa-download" />
+                CP UNIT-III, UNIT-IV & UNIT-V<i className="fa fa-download" />
               </a>
             </Button>
           </div>

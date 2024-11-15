@@ -635,10 +635,14 @@ int main() {
               </li>
             </ol>
 
-            <h3>Lab 1: Familiarization with Programming Environment</h3>
+            <h3 style={{ color: "red" }}>
+              Lab 1: Familiarization with Programming Environment
+            </h3>
             <ol>
               <li>
-                <strong>Basic Linux Environment and Editors</strong>
+                <strong style={{ color: "red" }}>
+                  Basic Linux Environment and Editors
+                </strong>
                 <ol>
                   <li>
                     <strong>Using the Terminal:</strong>
@@ -702,7 +706,9 @@ int main() {
                 </ol>
               </li>
               <li>
-                <strong>Exposure to Turbo C and GCC</strong>
+                <strong style={{ color: "red" }}>
+                  Exposure to Turbo C and GCC
+                </strong>
                 <ol>
                   <li>
                     <strong>Turbo C:</strong>
@@ -731,7 +737,7 @@ int main() {
                 </ol>
               </li>
               <li>
-                <strong>
+                <strong style={{ color: "red" }}>
                   Writing Simple Programs Using printf() and scanf()
                 </strong>
                 <ol>
@@ -791,7 +797,7 @@ void main() {
               and graphic notation.
             </p>
 
-            <h2>Suggested Experiments / Activities</h2>
+            <h2>Suggested Experiments / Activities:</h2>
             <h3>Tutorial 2: Problem-solving using Algorithms and Flowcharts</h3>
             <h3>Lab 1: Converting Algorithms/Flowcharts into C Source Code</h3>
             <p>
@@ -845,7 +851,7 @@ void main() {
 
             <h4>Sample Programs</h4>
 
-            <h5>i) Sum and Average of 3 Numbers</h5>
+            <h5 style={{ color: "red" }}>i) Sum and Average of 3 Numbers</h5>
             <strong>Algorithm:</strong>
             <ol>
               <li>Start</li>
@@ -881,7 +887,9 @@ void main() {
             <a target="_blank" href="https://onlinegdb.com/YVP9-L_yL">
               click
             </a>
-            <h5>ii) Conversion of Fahrenheit to Celsius and Vice Versa</h5>
+            <h5 style={{ color: "red" }}>
+              ii) Conversion of Fahrenheit to Celsius and Vice Versa
+            </h5>
             <strong>Algorithm:</strong>
             <ol>
               <li>Start</li>
@@ -930,7 +938,7 @@ void main() {
             <a target="_blank" href="https://onlinegdb.com/kco_oplZm">
               click
             </a>
-            <h5>iii) Simple Interest Calculation</h5>
+            <h5 style={{ color: "red" }}>iii) Simple Interest Calculation</h5>
             <strong>Algorithm:</strong>
             <ol>
               <li>Start</li>
@@ -978,11 +986,15 @@ void main() {
               arithmetic operators can be used with variables and constants.
             </p>
 
-            <h2>Suggested Experiments / Activities</h2>
-            <h3>Tutorial 3: Variable Types and Type Conversions</h3>
+            <h2>Suggested Experiments / Activities:</h2>
             <h3>
-              Lab 3: Simple Computational Problems Using Arithmetic Expressions
+              <u>Tutorial 3:</u> ariable Types and Type Conversions
             </h3>
+            <h3>
+              <u>Lab 3:</u>Simple Computational Problems Using Arithmetic
+              Expressions
+            </h3>
+
             <p>
               Developing algorithms and flowcharts for the following problems:
             </p>
@@ -1064,7 +1076,9 @@ void main() {
               Lab 3: Simple Computational Problems Using Arithmetic Expressions
             </h3>
 
-            <h4>i) Finding the Square Root of a Given Number</h4>
+            <h4 style={{ color: "red" }}>
+              i) Finding the Square Root of a Given Number
+            </h4>
             <pre>
               <code>
                 {`
@@ -1086,7 +1100,7 @@ void main() {
             <a target="_blank" href="https://onlinegdb.com/WtGpSIaA9">
               click
             </a>
-            <h4>ii) Finding Compound Interest</h4>
+            <h4 style={{ color: "red" }}>ii) Finding Compound Interest</h4>
             <pre>
               <code>
                 {`
@@ -1108,7 +1122,9 @@ void main() {
             <a target="_blank" href="https://onlinegdb.com/7e9_k61L4">
               click
             </a>
-            <h4>iii) Area of a Triangle Using Heron's Formula</h4>
+            <h4 style={{ color: "red" }}>
+              iii) Area of a Triangle Using Heron's Formula
+            </h4>
             <pre>
               <code>
                 {`
@@ -1134,7 +1150,9 @@ void main() {
             <a target="_blank" href="https://onlinegdb.com/3KKA09sS7">
               click
             </a>
-            <h4>iv) Distance Travelled by an Object</h4>
+            <h4 style={{ color: "red" }}>
+              iv) Distance Travelled by an Object
+            </h4>
             <pre>
               <code>{`
 #include <stdio.h>
@@ -1230,7 +1248,9 @@ void main() {
               Associativity
             </h4>
 
-            <h5>i) Evaluate the Following Expressions</h5>
+            <h5 style={{ color: "red" }}>
+              i) Evaluate the Following Expressions
+            </h5>
             <p>
               To evaluate the expressions programmatically, create a C file
               named <code>expressions.c</code>:
@@ -1241,18 +1261,19 @@ void main() {
 #include <stdio.h>
 void main() {
     int A = 5, B = 10, C = 2, D = 3, E = 4, F = 6, G = 1;
+    int result_a,result_b,result_c;
     int i = 2, J;
 
     // Expression a
-    int result_a = A + B * C + (D * E) + F * G;
+    result_a = A + B * C + (D * E) + F * G;
     printf("Result of (a) A + B * C + (D * E) + F * G: %d\\n", result_a);
 
     // Expression b
-    int result_b = A / B * C - B + A * D / 3;
+    result_b = A / B * C - B + A * D / 3;
     printf("Result of (b) A / B * C - B + A * D / 3: %d\\n", result_b);
 
     // Expression c
-    int result_c = A++ + B-- - A;
+    result_c = A++ + B-- - A;
     printf("Result of (c) A+++B---A: %d\\n", result_c); // Note: A and B will change after this
 
     // Expression d
@@ -1263,10 +1284,10 @@ void main() {
               </code>
             </pre>
             <b>Program Link:</b>
-            <a target="_blank" href="https://onlinegdb.com/zd6VJzASH">
+            <a target="_blank" href="https://onlinegdb.com/FT1at-bAS">
               click
             </a>
-            <h5>
+            <h5 style={{ color: "red" }}>
               ii) Find the Maximum of Three Numbers Using the Conditional
               Operator
             </h5>
@@ -1291,7 +1312,7 @@ void main() {
             <a target="_blank" href="https://onlinegdb.com/HAtSoVYYL">
               click
             </a>
-            <h5>
+            <h5 style={{ color: "red" }}>
               iii) Take Marks of 5 Subjects in Integers, and Find the Total and
               Average in Float
             </h5>
@@ -1299,24 +1320,34 @@ void main() {
               <code>
                 {`
 #include <stdio.h>
-void main() {
-    int i;
-    float marks[5], total=0, average;
-    printf("Enter marks of 5 subjects: ");
-    for (i = 0; i < 5; i++) {
-        scanf("%f", &marks[i]);
-        total += marks[i];
-    }
-    average = total / i; // Use 5.0 to ensure float division
 
-    printf("Total: %.2f\\n", total);
-    printf("Average: %.2f\\n", average);
+void main() {
+    int marks[5]; // int for 5 subject marks
+    float total=0, average; // float values for total & average
+    int i; // i for loop 
+
+    printf("Enter marks for 5 subjects:\\n");
+
+    // Taking input for marks
+    for (i = 0; i < 5; i++) {
+        printf("Subject %d: ", i + 1);
+        scanf("%d", &marks[i]);  // Reading marks
+        total += marks[i];       // Adding marks to total
+    }
+
+    // Calculating average
+    average = total / i;
+
+    // Displaying the results
+    printf("%d Subjects Total Marks: %.2f\\n",i,total);
+    printf("%d Subjects Average Marks: %.2f\\n", i,average);
 }
+
 `}
               </code>
             </pre>
             <b>Program Link:</b>
-            <a target="_blank" href="https://onlinegdb.com/VgaOigo43">
+            <a target="_blank" href="https://onlinegdb.com/G1rzsjeBx">
               click
             </a>
           </Accordion.Body>
@@ -1339,10 +1370,12 @@ void main() {
             <h3>Tutorial 5: Branching and logical expressions</h3>
             <h3>Lab 5: Problems involving if-then-else structures</h3>
 
-            <h3>i) Find the Max and Min of Four Numbers Using If-Else</h3>
+            <h3 style={{ color: "red" }}>
+              i) Find the Max and Min of Four Numbers Using If-Else
+            </h3>
             <p>
               Source Code:{" "}
-              <a href="https://onlinegdb.com/Zg__Dwx_S" target="_blank">
+              <a href="https://onlinegdb.com/1zCGZdzVh" target="_blank">
                 min_max.c
               </a>
             </p>
@@ -1352,50 +1385,92 @@ void main() {
 #include <stdio.h>
 
 void main() {
-    int a, b, c, d;
-    printf("Enter four numbers: ");
+    int a, b, c, d; // Four numbers
+    int max, min;   // Variables to store maximum and minimum
+
+    // Input four numbers
+    printf("Enter four numbers:\\n");
     scanf("%d %d %d %d", &a, &b, &c, &d);
-    int max = a;
-    int min = a;
-    if (b &gt; max) max = b;
-    if (c &gt; max) max = c;
-    if (d &gt; max) max = d;
-    if (b &lt; min) min = b;
-    if (c &lt; min) min = c;
-    if (d &lt; min) min = d;
-    printf("Max: %d\\n", max);
-    printf("Min: %d\\n", min);
+
+    // Finding the maximum
+    if (a > b && a > c && a > d) {
+        max = a;
+    } else if (b > c && b > d) {
+        max = b;
+    } else if (c > d) {
+        max = c;
+    } else {
+        max = d;
+    }
+
+    // Finding the minimum
+    if (a < b && a < c && a < d) {
+        min = a;
+    } else if (b < c && b < d) {
+        min = b;
+    } else if (c < d) {
+        min = c;
+    } else {
+        min = d;
+    }
+
+    // Display the results
+    printf("Maximum: %d\\n", max);
+    printf("Minimum: %d\\n", min);
 }
+
 `}
               </code>
             </pre>
 
-            <h3>ii) Generate Electricity Bill</h3>
+            <h3 style={{ color: "red" }}>ii) Generate Electricity Bill</h3>
             <p>
               Source Code:{" "}
-              <a href="https://onlinegdb.com/vXX6sF33M" target="_blank">
+              <a href="https://onlinegdb.com/8jNsLLfyV" target="_blank">
                 generate_electricity_bill.c
               </a>
             </p>
             <pre>
               <code>
                 {` 
+// C Program to Generate an Electricity Bill
+
+/*
+ Input: The user inputs the number of units consumed.
+ Tariff System:
+    -> 0-100 units: ₹1.5 per unit.
+    -> 101-300 units: ₹2.0 per unit for units beyond 100.
+    -> Above 300 units: ₹3.0 per unit for units beyond 300.
+    -> Fixed surcharge of ₹50 is added to the bill.
+*/
 #include <stdio.h>
 
-void main() {
+int main() {
     int units;
-    float bill;
+    float billAmount;
+
+    // Input the number of units consumed
     printf("Enter the number of units consumed: ");
     scanf("%d", &units);
-    if (units &lt;= 100) {
-        bill = units * 1.5;
-    } else if (units &lt;= 300) {
-        bill = 100 * 1.5 + (units - 100) * 2.5;
+
+    // Calculate the bill based on the tariff
+    if (units <= 100) {
+        billAmount = units * 1.5; // First 100 units at 1.5 per unit
+    } else if (units <= 300) {
+        billAmount = (100 * 1.5) + (units - 100) * 2.0; // Next 200 units at 2.0 per unit
     } else {
-        bill = 100 * 1.5 + 200 * 2.5 + (units - 300) * 3.5;
+        billAmount = (100 * 1.5) + (200 * 2.0) + (units - 300) * 3.0; // Beyond 300 units at 3.0 per unit
     }
-    printf("Electricity Bill: %.2f\\n", bill);
+
+    // Add a fixed surcharge of 50
+    billAmount += 50;
+
+    // Display the total bill
+    printf("Electricity Bill: ₹%.2f\\n", billAmount);
+
+    return 0;
 }
+
 `}
               </code>
             </pre>
@@ -1404,15 +1479,17 @@ void main() {
               <code>
                 {` 
 Enter the number of units consumed: 80
-Electricity Bill: 120.00
+Electricity Bill: ₹170.00
 `}
               </code>
             </pre>
 
-            <h3>iii) Find the Roots of the Quadratic Equation</h3>
+            <h3 style={{ color: "red" }}>
+              iii) Find the Roots of the Quadratic Equation
+            </h3>
             <p>
               Source Code:{" "}
-              <a href="https://onlinegdb.com/uMp9I3sFq1" target="_blank">
+              <a href="https://onlinegdb.com/TbmpdMD_g" target="_blank">
                 roots_of_the_quadratic.c
               </a>
             </p>
@@ -1420,26 +1497,44 @@ Electricity Bill: 120.00
               <code>
                 {` 
 #include <stdio.h>
-#include <math.h>
+#include <math.h> // Required for sqrt() function
 
-void main() {
-    float a, b, c, discriminant, root1, root2;
-    printf("Enter coefficients a, b, c: ");
+int main() {
+    float a, b, c, discriminant, root1, root2, realPart, imagPart;
+
+    // Input coefficients of the quadratic equation
+    printf("Enter coefficients a, b, and c: ");
     scanf("%f %f %f", &a, &b, &c);
+
+    // Calculate the discriminant
     discriminant = b * b - 4 * a * c;
-    if (discriminant &gt; 0) {
+
+    if (a == 0) {
+        printf("The value of 'a' must not be zero. Not a quadratic equation.\\n");
+    } else if (discriminant > 0) {
+        // Real and distinct roots
         root1 = (-b + sqrt(discriminant)) / (2 * a);
         root2 = (-b - sqrt(discriminant)) / (2 * a);
-        printf("Roots are real and different: %.2f, %.2f\\n", root1, root2);
+        printf("Roots are real and distinct:\\n");
+        printf("Root 1 = %.2f\\n", root1);
+        printf("Root 2 = %.2f\\n", root2);
     } else if (discriminant == 0) {
+        // Real and equal roots
         root1 = root2 = -b / (2 * a);
-        printf("Roots are real and the same: %.2f\\n", root1);
+        printf("Roots are real and equal:\\n");
+        printf("Root 1 = Root 2 = %.2f\\n", root1);
     } else {
-        float realPart = -b / (2 * a);
-        float imaginaryPart = sqrt(-discriminant) / (2 * a);
-        printf("Roots are complex: %.2f + %.2fi, %.2f - %.2fi\\n", realPart, imaginaryPart, realPart, imaginaryPart);
+        // Complex roots
+        realPart = -b / (2 * a);
+        imagPart = sqrt(-discriminant) / (2 * a);
+        printf("Roots are complex and distinct:\\n");
+        printf("Root 1 = %.2f + %.2fi\\n", realPart, imagPart);
+        printf("Root 2 = %.2f - %.2fi\\n", realPart, imagPart);
     }
+
+    return 0;
 }
+
 `}
               </code>
             </pre>
@@ -1447,56 +1542,75 @@ void main() {
             <pre>
               <code>
                 {` 
-1) Enter coefficients a, b, c: 1 -3 2
-Roots are real and different: 2.00, 1.00
-2) Enter coefficients a, b, c: 1 -4 4
-Roots are real and the same: 2.00
-3) Enter coefficients a, b, c: 1 2 5
-Roots are complex: -1.00 + 2.00i, -1.00 – 2.00i
+1) Enter coefficients a, b, and c: 1 -3 2
+Roots are real and distinct:
+Root 1 = 2.00
+Root 2 = 1.00
+
+2) Enter coefficients a, b, and c: 1 -2 1
+Roots are real and equal:
+Root 1 = Root 2 = 1.00
+
+3) Enter coefficients a, b, and c: 1 2 5
+Roots are complex and distinct:
+Root 1 = -1.00 + 2.00i
+Root 2 = -1.00 - 2.00i
+
 `}
               </code>
             </pre>
 
-            <h3>iv) Simulate a Calculator Using Switch Case</h3>
+            <h3 style={{ color: "red" }}>
+              iv) Simulate a Calculator Using Switch Case
+            </h3>
             <p>
               Source Code:{" "}
-              <a href="https://onlinegdb.com/ckJV4QWVT" target="_blank">
-                simple_switch_case.c
+              <a href="https://onlinegdb.com/dj91_clgg" target="_blank">
+                calculator_switch_case.c
               </a>
             </p>
             <pre>
               <code>
                 {` 
 #include <stdio.h>
-
 void main() {
     char operator;
-    float num1, num2, result;
-    printf("Enter operator (+, -, *, /): ");
-    scanf(" %c", &operator);
+    int num1, num2, result;
+
     printf("Enter two operands: ");
-    scanf("%f %f", &num1, &num2);
+    scanf("%d %d", &num1, &num2);
+    
+    printf("Enter operator (+, -, *, /, %%): ");
+    scanf(" %c", &operator);
+
     switch (operator) {
         case '+':
-            result = num1 + num2;
-            printf("Result: %.2f\\n", result);
-            break;
+                    result = num1 + num2;
+                    printf("%d+%d is %d\\n",num1,num2,result);
+                    break;
         case '-':
-            result = num1 - num2;
-            printf("Result: %.2f\\n", result);
-            break;
+                    result = num1 - num2;
+                    printf("%d-%d  is %d\\n",num1,num2,result);
+                    break;
         case '*':
-            result = num1 * num2;
-            printf("Result: %.2f\\n", result);
-            break;
+                    result = num1 * num2;
+                    printf("%d*%d is %d\\n",num1,num2,result);
+                    break;
         case '/':
-            if (num2 != 0) {
-                result = num1 / num2;
-                printf("Result: %.2f\\n", result);
-            } else {
-                printf("Error: Division by zero.\\n");
-            }
-            break;
+        case '%':
+                    if (num2 == 0) {
+                        printf("Error: Division by zero.\\n");
+                    } else{
+                        if (operator=='/') {
+                            result = num1 / num2;
+                            printf("%d/%d is %d\\n",num1,num2,result);
+                        }
+                        if (operator=='%') {
+                            result = num1 % num2;
+                            printf("%d%%%d is %d\\n",num1,num2,result);
+                        }
+                    }
+                    break;
         default:
             printf("Error: Invalid operator.\\n");
     }
@@ -1505,7 +1619,9 @@ void main() {
               </code>
             </pre>
 
-            <h3>v) Check if a Given Year is a Leap Year</h3>
+            <h3 style={{ color: "red" }}>
+              v) Check if a Given Year is a Leap Year
+            </h3>
             <p>
               Source Code:{" "}
               <a href="https://onlinegdb.com/EpxBp_V4kV" target="_blank">
@@ -1564,10 +1680,12 @@ void main() {
 
             <h2>Programs</h2>
 
-            <h3>i) Find the Factorial of a Given Number</h3>
+            <h3 style={{ color: "red" }}>
+              i) Find the Factorial of a Given Number
+            </h3>
             <p>
               Ans:{" "}
-              <a href="https://onlinegdb.com/QiZ6t4Ob_" target="_blank">
+              <a href="https://onlinegdb.com/dpjXMvFqf" target="_blank">
                 factorial_given_number.c
               </a>
             </p>
@@ -1576,8 +1694,7 @@ void main() {
 #include <stdio.h>
 
 void main() {
-    int n;
-    long factorial = 1;
+    long i,n,factorial = 1;
 
     printf("Enter a positive integer: ");
     scanf("%d", &n);
@@ -1585,10 +1702,10 @@ void main() {
     if (n < 0) {
         printf("Factorial is not defined for negative numbers.\\n");
     } else {
-        for (int i = 1; i <= n; ++i) {
+        for (i = 1; i <= n; ++i) {
             factorial *= i;
         }
-        printf("Factorial of %d = %ld\\n", n, factorial);
+        printf("Factorial of %d is %ld\\n", n, factorial);
     }
 }
 `}</code>
@@ -1597,40 +1714,43 @@ void main() {
             <pre>
               <code>{`
 Enter a positive integer: 5
-Factorial of 5 = 120
+Factorial of 5 is 120
 `}</code>
             </pre>
 
-            <h3>ii) Check if a Given Number is Prime</h3>
+            <h3 style={{ color: "red" }}>
+              ii) Check if a Given Number is Prime
+            </h3>
             <p>
               Ans:{" "}
-              <a href="https://onlinegdb.com/3sYxZms96" target="_blank">
+              <a href="https://onlinegdb.com/HmB_omhjt" target="_blank">
                 prime_number_or_not.c
               </a>
             </p>
             <pre>
               <code>{`
 #include <stdio.h>
-
 void main() {
-    int n, isPrime = 1;
+    int i,n,isPrime = 1;
     printf("Enter a positive integer: ");
     scanf("%d", &n);
     if (n <= 1) {
         isPrime = 0;
     } else {
-        for (int i = 2; i <= n / 2; ++i) {
+        for (i = 2; i <= n / 2; i++) {
             if (n % i == 0) {
                 isPrime = 0;
                 break;
             }
         }
     }
-    if (isPrime)
+    if (isPrime){
         printf("%d is a prime number.\\n", n);
-    else
+    }else{
         printf("%d is not a prime number.\\n", n);
+    }
 }
+
 `}</code>
             </pre>
             <h4>Input & Output Example:</h4>
@@ -1641,7 +1761,9 @@ Enter a positive integer: 13
 `}</code>
             </pre>
 
-            <h3>iii) Compute Sine and Cosine Series</h3>
+            <h3 style={{ color: "red" }}>
+              iii) Compute Sine and Cosine Series
+            </h3>
             <p>
               Ans:{" "}
               <a href="https://onlinegdb.com/c7H-0oPHw" target="_blank">
@@ -1682,23 +1804,22 @@ Approximate cosine(1.000000) = 0.540302
             <h3>iv) Check if a Number is a Palindrome</h3>
             <p>
               Ans:{" "}
-              <a href="https://onlinegdb.com/YL5h2_4F1" target="_blank">
+              <a href="https://onlinegdb.com/sy1LpK8jy" target="_blank">
                 check_palindrome_number.c
               </a>
             </p>
             <pre>
               <code>{`
 #include <stdio.h>
-
-int main() {
-    int original, reversed = 0, remainder;
+void main() {
+    int original,tempNum,reversed = 0,remainder;
     printf("Enter an integer: ");
     scanf("%d", &original); 
-    int num = original; // Store original number for comparison
-    while (num != 0) {
-        remainder = num % 10;
+    tempNum = original; // Store original number for comparison
+    while (tempNum != 0) {
+        remainder = tempNum % 10;
         reversed = reversed * 10 + remainder;
-        num /= 10;
+        tempNum /= 10;
     }
     if (original == reversed) {
         printf("%d is a palindrome.\\n", original);
@@ -1716,10 +1837,10 @@ Enter an integer: 121
 `}</code>
             </pre>
 
-            <h3>v) Construct a Pyramid of Numbers</h3>
+            <h3 style={{ color: "red" }}>v) Construct a Pyramid of Numbers</h3>
             <p>
               Ans:{" "}
-              <a href="https://onlinegdb.com/HJ3pdyolF" target="_blank">
+              <a href="https://onlinegdb.com/Pd4oJiQjT" target="_blank">
                 pyramid_of_numbers.c
               </a>
             </p>
@@ -1728,31 +1849,34 @@ Enter an integer: 121
 #include <stdio.h>
 
 void main() {
-    int rows;
+    int r,c,s,rows;
+
     printf("Enter the number of rows: ");
     scanf("%d", &rows);
-    for (int i = 1; i <= rows; i++) {
+
+    for (r = 1; r <= rows; r++) {
         // Print spaces
-        for (int j = i; j < rows; j++) {
+        for (s = r; s < rows; s++) {
             printf(" ");
         }
         // Print numbers
-        for (int k = 1; k <= i; k++) {
-            printf("%d ", k);
+        for (c = 1; c <= r; c++) {
+            printf("%d ", c);
         }
         printf("\\n");
     }
 }
+
 `}</code>
             </pre>
             <h4>Input & Output Example:</h4>
             <pre>
               <code>{`
 Enter the number of rows: 5
-1
-1 2
-1 2 3
-1 2 3 4
+    1 
+   1 2 
+  1 2 3 
+ 1 2 3 4 
 1 2 3 4 5
 `}</code>
             </pre>
