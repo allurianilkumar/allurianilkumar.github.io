@@ -76,16 +76,10 @@ const App = () => {
   return (
     <Router>
       <div className="container mt-0">
-        <marquee style={marqueeStyle}>
-          {" "}
-          Hello, My website in progress. I am Anil, Full Stack Ruby On Rails
-          Developer having total 6+ years of experience on IT industry & having
-          3+ years of Non-IT experience with various domains and technologies.
-          Reach me via E-Mail: kumarallurianil@gmail.com, Mobile: +91
-          9848094663.
-        </marquee>
+        <marquee style={marqueeStyle}> </marquee>
         <NavBar isAuthenticated={isAuthenticated} />
         <Routes>
+          <Route path="/*" element={<Home />} />
           <Route path="/" index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
@@ -158,7 +152,6 @@ const App = () => {
               />
             </>
           )}
-          <Route path="*" element={<Home />} />
         </Routes>
         <Footer />
       </div>
