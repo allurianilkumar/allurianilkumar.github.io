@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.b70bbfbc.css",
-    "main.js": "/static/js/main.3e4c5ec4.js",
-    "static/js/501.bb41a505.chunk.js": "/static/js/501.bb41a505.chunk.js",
+    "main.css": "/static/css/main.e127c565.css",
+    "main.js": "/static/js/main.81109dbb.js",
+    "static/js/501.96fa7cb4.chunk.js": "/static/js/501.96fa7cb4.chunk.js",
     "static/js/488.d163d408.chunk.js": "/static/js/488.d163d408.chunk.js",
     "static/media/rubyonrails.jpg": "/static/media/rubyonrails.920eaef20bf6a7c779d4.jpg",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
@@ -17,13 +17,13 @@
     "static/media/background.png": "/static/media/background.583a1db065b61ea302a0.png",
     "static/media/ReactJsImage.jpg": "/static/media/ReactJsImage.d8575a6b0c111128ec72.jpg",
     "index.html": "/index.html",
-    "main.b70bbfbc.css.map": "/static/css/main.b70bbfbc.css.map",
-    "main.3e4c5ec4.js.map": "/static/js/main.3e4c5ec4.js.map",
-    "501.bb41a505.chunk.js.map": "/static/js/501.bb41a505.chunk.js.map",
+    "main.e127c565.css.map": "/static/css/main.e127c565.css.map",
+    "main.81109dbb.js.map": "/static/js/main.81109dbb.js.map",
+    "501.96fa7cb4.chunk.js.map": "/static/js/501.96fa7cb4.chunk.js.map",
     "488.d163d408.chunk.js.map": "/static/js/488.d163d408.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b70bbfbc.css",
-    "static/js/main.3e4c5ec4.js"
+    "static/css/main.e127c565.css",
+    "static/js/main.81109dbb.js"
   ]
 }
