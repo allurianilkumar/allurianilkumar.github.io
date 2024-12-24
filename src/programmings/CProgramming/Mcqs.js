@@ -644,6 +644,506 @@ const mcqs = [
     ],
     answer: "C) Syntax errors",
   },
+  {
+    "question": "What is the highest index for an array with 10 elements in C?",
+    "options": [
+      "A) 5",
+      "B) 9",
+      "C) 10",
+      "D) 11"
+    ],
+    "answer": "B) 9"
+  },
+  {
+    "question": "Which function is used to compare two strings in C?",
+    "options": [
+      "A) strcmp",
+      "B) strcat",
+      "C) strlen",
+      "D) strncmp"
+    ],
+    "answer": "A) strcmp"
+  },
+  {
+    "question": "An array's elements are always stored in ……………… memory locations?",
+    "options": [
+      "A) sequential",
+      "B) random",
+      "C) both A & B",
+      "D) None of the above"
+    ],
+    "answer": "A) sequential"
+  },
+  {
+    "question": "A pointer to a pointer stores …………. of another ………………… variable.",
+    "options": [
+      "A) index, array",
+      "B) address, pointer",
+      "C) address, union",
+      "D) none"
+    ],
+    "answer": "B) address, pointer"
+  },
+  {
+    "question": "In C, what is a double pointer (int)?",
+    "options": [
+      "A) a pointer to an integer",
+      "B) A pointer to a pointer",
+      "C) A pointer to a double data type",
+      "D) none of the above"
+    ],
+    "answer": "B) A pointer to a pointer"
+  },
+  {
+    "question": "What is the purpose of the malloc() function?",
+    "options": [
+      "A) Allocate memory on the stack",
+      "B) Allocate memory on the heap",
+      "C) Allocate memory on the variable",
+      "D) Allocate memory on the function"
+    ],
+    "answer": "B) Allocate memory on the heap"
+  },
+  {
+    "question": "While declaring a pointer variable, which operator do we use?",
+    "options": [
+      "A) dot",
+      "B) Arrow",
+      "C) Address",
+      "D) indirection"
+    ],
+    "answer": "D) indirection"
+  },
+  {
+    "question": "The default storage class of a local variable is?",
+    "options": [
+      "A) Auto",
+      "B) Static",
+      "C) extern",
+      "D) Register"
+    ],
+    "answer": "A) Auto"
+  },
+  {
+    "question": "In which method is the address of the variable passed by the calling function to the called function?",
+    "options": [
+      "A) Call-by-value",
+      "B) Call-by-reference",
+      "C) Both A & B",
+      "D) None"
+    ],
+    "answer": "B) Call-by-reference"
+  },
+  {
+    "question": "The size of a Union is determined by the size of the ………..",
+    "options": [
+      "A) first member in the union",
+      "B) Last member in the union",
+      "C) Biggest member in the union",
+      "D) sum of the size of all members"
+    ],
+    "answer": "C) Biggest member in the union"
+  },
+  {
+    "question": "What is the return type of malloc() or calloc()?",
+    "options": [
+      "A) int *",
+      "B) int **",
+      "C) void *",
+      "D) void **"
+    ],
+    "answer": "C) void *"
+  },
+  {
+    "question": "The process in which a function calls itself directly or indirectly is called?",
+    "options": [
+      "A) Recursion",
+      "B) type conversion",
+      "C) constant",
+      "D) storage classes"
+    ],
+    "answer": "A) Recursion"
+  },
+  {
+    "question": "File is of type ………….",
+    "options": [
+      "A) int type",
+      "B) char type",
+      "C) struct type",
+      "D) None of the above"
+    ],
+    "answer": "B) char type"
+  },
+  {
+    "question": "Which function will you choose to join two words?",
+    "options": [
+      "A) strcpy()",
+      "B) strcat()",
+      "C) strlen()",
+      "D) strncat()"
+    ],
+    "answer": "B) strcat()"
+  },
+  {
+    "question": "Allocating memory at runtime is known as ……..",
+    "options": [
+      "A) static memory allocation",
+      "B) dynamic memory allocation",
+      "C) continuous memory allocation",
+      "D) None"
+    ],
+    "answer": "B) dynamic memory allocation"
+  },
+  {
+    "question": "If an array is declared as arr[] = {1, 3, 5, 7, 9};, then what is the value of arr[3]?",
+    "options": [
+      "A) 1",
+      "B) 9",
+      "C) 7",
+      "D) 5"
+    ],
+    "answer": "C) 7"
+  },
+  {
+    "question": "#error is used for?",
+    "options": [
+      "A) printing error messages",
+      "B) printing output",
+      "C) Both A & B",
+      "D) None"
+    ],
+    "answer": "A) printing error messages"
+  },
+  {
+    "question": "What can be used to input a string with blank space?",
+    "options": [
+      "A) inline",
+      "B) None",
+      "C) getline()",
+      "D) putline"
+    ],
+    "answer": "C) getline()"
+  },
+  {
+    "question": "Which of the following cannot be a structure member?",
+    "options": [
+      "A) function",
+      "B) collection of elements",
+      "C) array",
+      "D) another structure"
+    ],
+    "answer": "A) function"
+  },
+  {
+    "question": "Why is calloc() function used for?",
+    "options": [
+      "A) allocates the specified number of bytes",
+      "B) calls the specified block of memory for execution.",
+      "C) allocates the specified number of bytes and initializes them to zero",
+      "D) increases or decreases the size of the specified block of memory and reallocates it"
+    ],
+    "answer": "C) allocates the specified number of bytes and initializes them to zero"
+  },
+  {
+    "question": "Array Index start with __ index?",
+    "options": [
+      "A) 0",
+      "B) -0",
+      "C) 1",
+      "D) -1"
+    ],
+    "answer": "A) 0"
+  },
+  {
+    "question": "Given the declaration int arr[5] = {10, 20, 30, 40, 50};, what does *(arr + 3) return?",
+    "options": [
+      "A) 10",
+      "B) 30",
+      "C) 40",
+      "D) 50"
+    ],
+    "answer": "C) 40"
+  },
+  {
+    "question": "How to print the last element in an array?",
+    "options": [
+      "A) SIZE+0",
+      "B) SIZE+0",
+      "C) SIZE+1",
+      "D) SIZE-1"
+    ],
+    "answer": "D) SIZE-1"
+  },
+  {
+    "question": "Which of the following operations is invalid in a two-dimensional array int arr[3][4]?",
+    "options": [
+      "A) Accessing arr[2][3]",
+      "B) Assigning arr[3][3] = 10;",
+      "C) Declaring arr with dimensions [3][0]",
+      "D) All of the above"
+    ],
+    "answer": "B) Assigning arr[3][3] = 10;"
+  },
+  {
+    "question": "Why is a null character (\\0) used in strings in C?",
+    "options": [
+      "A) To indicate the end of the string",
+      "B) To store whitespace in the string",
+      "C) To determine the length of the string at compile time",
+      "D) To reserve memory for additional characters"
+    ],
+    "answer": "A) To indicate the end of the string"
+  },
+  {
+    "question": "What will the following code print? char str[] = \"Hello\"; printf(\"%s\", str + 2);",
+    "options": [
+      "A) He",
+      "B) llo",
+      "C) Hello",
+      "D) l"
+    ],
+    "answer": "B) llo"
+  },
+  {
+    "question": "What does the following code snippet print? int x = 10, *p = &x; printf(\"%d\", *p + x);",
+    "options": [
+      "A) 10",
+      "B) 20",
+      "C) 15",
+      "D) Compiler error"
+    ],
+    "answer": "B) 20"
+  },
+  {
+    "question": "Which of the following is invalid for pointer arithmetic?",
+    "options": [
+      "A) Adding an integer to a pointer",
+      "B) Subtracting two pointers",
+      "C) Dividing a pointer by an integer",
+      "D) Incrementing a pointer"
+    ],
+    "answer": "C) Dividing a pointer by an integer"
+  },
+  {
+    "question": "In the code below, what does ptr point to after the execution? int arr[] = {1, 2, 3, 4}; int *ptr = arr; ptr += 2;",
+    "options": [
+      "A) The first element of arr",
+      "B) The second element of arr",
+      "C) The third element of arr",
+      "D) The fourth element of arr"
+    ],
+    "answer": "C) The third element of arr"
+  },
+  {
+    "question": "What is the size of a pointer variable on a 64-bit system?",
+    "options": [
+      "A) 4 bytes",
+      "B) 8 bytes",
+      "C) 16 bytes",
+      "D) Depends on the data type being pointed to"
+    ],
+    "answer": "B) 8 bytes"
+  },
+  {
+    "question": "What is the return type of the following function? int add(int a, int b) { return a + b; }",
+    "options": [
+      "A) int",
+      "B) void",
+      "C) float",
+      "D) None of the above"
+    ],
+    "answer": "A) int"
+  },
+  {
+    "question": "What is the output of this code? void func(int *x) { *x = *x + 10; } void main() { int y = 5; func(&y); printf(\"%d\", y); }",
+    "options": [
+      "A) 5",
+      "B) 10",
+      "C) 15",
+      "D) Compilation error"
+    ],
+    "answer": "C) 15"
+  },
+  {
+    "question": "What is the correct way to define a structure in C?",
+    "options": [
+      "A) struct { int a, b; };",
+      "B) struct MyStruct { int a, b; };",
+      "C) structure MyStruct { int a, b; };",
+      "D) struct MyStruct { int a, b; }"
+    ],
+    "answer": "B) struct MyStruct { int a, b; };"
+  },
+  {
+    "question": "Which operator is used to dereference a pointer?",
+    "options": [
+      "A) &",
+      "B) *",
+      "C) ->",
+      "D) None of the above"
+    ],
+    "answer": "B) *"
+  },
+  {
+    "question": "If you declare a union with members of different types, what will be the maximum size of the union?",
+    "options": [
+      "A) The size of the smallest member",
+      "B) The size of the largest member",
+      "C) The sum of the sizes of all members",
+      "D) The average size of all members"
+    ],
+    "answer": "B) The size of the largest member"
+  },
+  {
+    "question": "Which of the following is NOT a valid file opening mode in C?",
+    "options": [
+      "A) \"r\"",
+      "B) \"w\"",
+      "C) \"rw\"",
+      "D) \"a\""
+    ],
+    "answer": "C) \"rw\""
+  },
+  {
+    "question": "What is the purpose of the fclose function in C?",
+    "options": [
+      "A) To write data to a file",
+      "B) To close an open file and free associated resources",
+      "C) To delete the file from the disk",
+      "D) None of the above"
+    ],
+    "answer": "B) To close an open file and free associated resources"
+  },
+  {
+    "question": "Which function writes a single character to a file?",
+    "options": [
+      "A) fwrite()",
+      "B) fputc()",
+      "C) fgets()",
+      "D) fprintf()"
+    ],
+    "answer": "B) fputc()"
+  },
+  {
+    "question": "Which of the following represents a correct usage of fprintf in C?",
+    "options": [
+      "A) fprintf(\"%s\", \"Hello\");",
+      "B) fprintf(filePtr, \"Hello World\");",
+      "C) fprintf(filePtr, \"%d\", 42);",
+      "D) fprintf(\"Hello\");"
+    ],
+    "answer": "B) fprintf(filePtr, \"Hello World\");"
+  },
+  {
+    "question": "Which of the following functions is used to close a file?",
+    "options": [
+      "A) fread()",
+      "B) fclose()",
+      "C) fexit()",
+      "D) fstop()"
+    ],
+    "answer": "B) fclose()"
+  },
+  {
+    "question": "In the code below, what does ptr point to after the execution? int arr[] = {1, 2, 3, 4}; int *ptr = arr; ptr += 2;",
+    "options": [
+      "A) The first element of arr",
+      "B) The second element of arr",
+      "C) The third element of arr",
+      "D) The fourth element of arr"
+    ],
+    "answer": "C) The third element of arr"
+  },
+  {
+    "question": "Why is a null character (\\0) used in strings in C?",
+    "options": [
+      "A) To indicate the end of the string",
+      "B) To store whitespace in the string",
+      "C) To determine the length of the string at compile time",
+      "D) To reserve memory for additional characters"
+    ],
+    "answer": "A) To indicate the end of the string"
+  },
+  {
+    "question": "What does the following code snippet print? int x = 10, *p = &x; printf(\"%d\", *p + x);",
+    "options": [
+      "A) 10",
+      "B) 20",
+      "C) 15",
+      "D) Compiler error"
+    ],
+    "answer": "B) 20"
+  },
+  {
+    "question": "What is the output of this code? void func(int *x) { *x = *x + 10; } void main() { int y = 5; func(&y); printf(\"%d\", y); }",
+    "options": [
+      "A) 5",
+      "B) 10",
+      "C) 15",
+      "D) Compilation error"
+    ],
+    "answer": "C) 15"
+  },
+  {
+    "question": "Which of the following is invalid for pointer arithmetic?",
+    "options": [
+      "A) Adding an integer to a pointer",
+      "B) Subtracting two pointers",
+      "C) Dividing a pointer by an integer",
+      "D) Incrementing a pointer"
+    ],
+    "answer": "C) Dividing a pointer by an integer"
+  },
+  {
+    "question": "Which operator is used to dereference a pointer?",
+    "options": [
+      "A) &",
+      "B) *",
+      "C) ->",
+      "D) None of the above"
+    ],
+    "answer": "B) *"
+  },
+  {
+    "question": "What does the following code snippet print? int x = 10, *p = &x; printf(\"%d\", *p + x);",
+    "options": [
+      "A) 10",
+      "B) 20",
+      "C) 15",
+      "D) Compiler error"
+    ],
+    "answer": "B) 20"
+  },
+  {
+    "question": "What is the correct way to define a structure in C?",
+    "options": [
+      "A) struct { int a, b; };",
+      "B) struct MyStruct { int a, b; };",
+      "C) structure MyStruct { int a, b; };",
+      "D) struct MyStruct { int a, b; }"
+    ],
+    "answer": "B) struct MyStruct { int a, b; };"
+  },
+  {
+    "question": "Given the declaration int arr[5] = {10, 20, 30, 40, 50};, what does *(arr + 3) return?",
+    "options": [
+      "A) 10",
+      "B) 30",
+      "C) 40",
+      "D) 50"
+    ],
+    "answer": "C) 40"
+  },
+  {
+    "question": "Which of the following represents a correct usage of fprintf in C?",
+    "options": [
+      "A) fprintf(\"%s\", \"Hello\");",
+      "B) fprintf(filePtr, \"Hello World\");",
+      "C) fprintf(filePtr, \"%d\", 42);",
+      "D) fprintf(\"Hello\");"
+    ],
+    "answer": "B) fprintf(filePtr, \"Hello World\");"
+  },
 ];
 
 const Mcqs = () => {
