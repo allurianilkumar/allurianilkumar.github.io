@@ -92,6 +92,24 @@ const CProgramming = () => {
             </Button>
           </div>
         </Col>
+        <Col>
+          <div className="">
+          <blink>
+            <Button
+              title="Click to downlod UNIT-3,4 & 5 MCQs"
+              variant="danger"
+            >
+              <a
+                className="button"
+                href="MCQ_MID2.pdf"
+                download="MCQ_MID2.pdf"
+              >
+                MCQ: UNIT-3,4 & 5
+              </a>
+            </Button>
+            </blink>
+          </div>
+        </Col>
       </Row>
       <CProgrammingConcepts />
     </>
