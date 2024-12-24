@@ -1032,7 +1032,7 @@ const mcqs = [
       "C) fprintf(filePtr, \"%d\", 42);",
       "D) fprintf(\"Hello\");"
     ],
-    "answer": "B) fprintf(filePtr, \"Hello World\");"
+    "answer": "B) fprintf(filePtr, \"Hello World\"); or C) fprintf(filePtr, \"%d\", 42);"
   },
   {
     "question": "Which of the following functions is used to close a file?",
@@ -1142,7 +1142,7 @@ const mcqs = [
       "C) fprintf(filePtr, \"%d\", 42);",
       "D) fprintf(\"Hello\");"
     ],
-    "answer": "B) fprintf(filePtr, \"Hello World\");"
+    "answer": "B) fprintf(filePtr, \"Hello World\"); or C) fprintf(filePtr, \"%d\", 42);"
   },
 ];
 
